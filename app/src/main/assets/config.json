@@ -1,0 +1,30 @@
+{
+  "version": "3.1.9",
+  "selectors": {
+    "createProjectButton": "button:has(i:contains(\"add_2\")):first()",
+    "disableAgentModeButton": "div:has(div[data-scroll-state=\"START\"]) button[aria-pressed=\"true\"], button:has(i:contains(\"close\")):has(span:contains(\"prompt\")), div:has(i:contains(\"edit_square\")) > button:has(i:contains(\"close\"))",
+    "enableAgentModeButton": "div:has(div[data-scroll-state=\"START\"]) button[aria-pressed=\"false\"], button:has(i:contains(\"expand_content\"))",
+    "configureUIModeButton": "button:has(i:contains(\"settings_2\"))",
+    "configButton": "button:has(i:contains(\"crop\")), button:has(i:contains(\"tune\"))",
+    "selectVideoMode": "div[data-state=\"open\"] div[role=\"tablist\"]:eq(0) button:eq(1)",
+    "selectImageMode": "div[data-state=\"open\"] div[role=\"tablist\"]:eq(0) button:eq(0)",
+    "textToVideoModeOption": "div[data-state=\"open\"] div[role=\"tablist\"]:eq(1) button:eq(1)",
+    "imageToVideoModeOption": "div[data-state=\"open\"] div[role=\"tablist\"]:eq(1) button:eq(0)",
+    "promptTextarea": "div[role=\"textbox\"]",
+    "submitButton": "button:has(i:contains(\"arrow_forward\"))",
+    "stopButton": "button:has(i:contains(\"stop\"))",
+    "downloadDoneButton": "button:has(i:contains(\"check\")), header button:last(), button:has(span:contains(\"Done\"))",
+    "outputCountTemplate": "div[data-state=\"open\"] div[role=\"tablist\"] button:contains(\"{outputCount}\")",
+    "aspectRatioTemplate": "div[data-state=\"open\"] div[role=\"tablist\"] button:has(i:contains(\"{aspectRatio}\"))",
+    "modelSelectButton": "div[data-state=\"open\"] button:has(i:contains(\"arrow_drop_down\"))",
+    "modelTemplate": "div[role=\"menu\"] button:has(span:contains(\"{model}\"))",
+    "videoLengthTemplate": "div[data-orientation=\"horizontal\"] > div > button:contains(\"{videoLength}\")",
+    "outputItems": "div > div > div[data-tile-id]:has(div)",
+    "tileByIdTemplate": "div[data-tile-id=\"{tileId}\"]:has(div)",
+    "quality1080Option": "button:has(span:contains(\"1080p\"))",
+    "quality2KOption": "button:has(span:contains(\"2K\"))",
+    "quality4KOption": "button:has(span:contains(\"4K\"))",
+    "moreOptionsButtonInHoverTile": "button:has(i:contains(\"more_vert\"))",
+    "downloadButtonInHoverTile": "div[aria-haspopup=\"menu\"] i:contains(\"download\")"
+  }
+}
